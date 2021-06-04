@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test2(failed)">
+    <parameter name="deviceID" value="2"/>
+    <classes>
+      <class name="com.qa.test.logInTest">
+        <methods>
+          <include name="AfterTest"/>
+          <include name="beforeTest"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- com.qa.test.logInTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
