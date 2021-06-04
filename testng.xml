@@ -9,7 +9,7 @@
   
   </test> <!-- Test -->
   
-   <test thread-count="5" name="Test2">
+<!--    <test thread-count="5" name="Test2">
   <parameter name="deviceID" value="2"/>
   <classes>
   <class name="com.qa.test.logInTest"/>
@@ -19,5 +19,5 @@
   
   
   
-  </test> 
+  </test> Test -->
 </suite> <!-- Suite -->

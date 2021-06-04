@@ -46,7 +46,7 @@ public class DriverManager {
 	}
 	
 	
-  public static  void initializeDriver(String deviceID, String OS) {
+  public static  void initializeDriver(String deviceID) {
 	  String userDir;
 	  FileInputStream fis = null;
 	  JSONTokener jt;

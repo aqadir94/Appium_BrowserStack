@@ -17,7 +17,7 @@ public class BaseTest {
 	@BeforeTest
 	public void beforeTest(String deviceID) {
 		
-		DriverManager.initializeDriver(deviceID,"po");
+		DriverManager.initializeDriver(deviceID);
 		
 		
 	
