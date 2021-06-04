@@ -94,7 +94,7 @@ public class DriverManager {
       // and desired capabilities defined above
        
       if(deviceData.get("os").toString().contains("Android")) {
-    	  caps.setCapability("app", "bs://15cccdd13bc8ee391a0890c8d7d549ab05fb1fa3");
+    	  caps.setCapability("app", app);
 			setDriver( new AndroidDriver(
 			    new URL("http://hub.browserstack.com/wd/hub"), caps));
 		
@@ -102,7 +102,7 @@ public class DriverManager {
       }
       
       else if (deviceData.get("os").toString().contains("iOS")){
-    	  caps.setCapability("app", app);
+    	  caps.setCapability("app", "bs://558b3741b28f1b69a755386b64eb1343de7d03ee");
     		setDriver( new IOSDriver(
     			    new URL("http://hub.browserstack.com/wd/hub"), caps));
     	  
