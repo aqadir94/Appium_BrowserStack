@@ -52,6 +52,16 @@ public class DriverManager {
 	  JSONTokener jt;
 	  JSONObject deviceData;
 	  
+	  
+	  String userName = System.getenv("BROWSERSTACK_USERNAME");
+	  String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
+	 // String browserstackLocal = System.getenv("BROWSERSTACK_LOCAL");
+	  String buildName = System.getenv("BROWSERSTACK_BUILD_NAME");
+	  //String browserstackLocalIdentifier = System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER");
+	  String app = System.getenv("BROWSERSTACK_APP_ID");
+	  
+	  
+	  
 	  try {
 	   userDir=System.getProperty("user.dir");
 	
@@ -64,8 +74,8 @@ public class DriverManager {
       DesiredCapabilities caps = new DesiredCapabilities();
       
       // Set your access credentials
-      caps.setCapability("browserstack.user", "gulamabbas_dnpI5R");
-      caps.setCapability("browserstack.key", "czW7xTpZ7Pzszqrwg5fw");
+      caps.setCapability("browserstack.user", userName);
+      caps.setCapability("browserstack.key", accessKey);
       
       // Set URL of the application under test
       
@@ -76,7 +86,7 @@ public class DriverManager {
         
       // Set other BrowserStack capabilities
       caps.setCapability("project", "First Java Project");
-      caps.setCapability("build", "Java Android");
+      caps.setCapability("build", buildName);
       caps.setCapability("name", "first_test");
         
       
@@ -92,7 +102,7 @@ public class DriverManager {
       }
       
       else if (deviceData.get("os").toString().contains("iOS")){
-    	  caps.setCapability("app", "bs://558b3741b28f1b69a755386b64eb1343de7d03ee");
+    	  caps.setCapability("app", app);
     		setDriver( new IOSDriver(
     			    new URL("http://hub.browserstack.com/wd/hub"), caps));
     	  

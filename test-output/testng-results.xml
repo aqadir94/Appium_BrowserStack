@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-04T08:17:16 EDT" name="Suite" finished-at="2021-06-04T08:17:49 EDT" duration-ms="32324">
+  <suite started-at="2021-06-04T16:44:29 EDT" name="Suite" finished-at="2021-06-04T16:44:59 EDT" duration-ms="29639">
     <groups>
     </groups>
-    <test started-at="2021-06-04T08:17:16 EDT" name="Test" finished-at="2021-06-04T08:17:44 EDT" duration-ms="27895">
+    <test started-at="2021-06-04T16:44:29 EDT" name="Test" finished-at="2021-06-04T16:44:59 EDT" duration-ms="29639">
       <class name="com.qa.test.logInTest">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.qa.test.logInTest@3059cbc]" started-at="2021-06-04T08:17:16 EDT" name="beforeTest" finished-at="2021-06-04T08:17:37 EDT" duration-ms="21202" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.qa.test.logInTest@3059cbc]" started-at="2021-06-04T16:44:29 EDT" name="beforeTest" finished-at="2021-06-04T16:44:51 EDT" duration-ms="21889" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,38 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="test()[pri:0, instance:com.qa.test.logInTest@3059cbc]" started-at="2021-06-04T08:17:37 EDT" name="test" finished-at="2021-06-04T08:17:44 EDT" duration-ms="6108" status="PASS">
+        <test-method signature="test()[pri:0, instance:com.qa.test.logInTest@3059cbc]" started-at="2021-06-04T16:44:51 EDT" name="test" finished-at="2021-06-04T16:44:58 EDT" duration-ms="6990" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method is-config="true" signature="AfterTest()[pri:0, instance:com.qa.test.logInTest@3059cbc]" started-at="2021-06-04T08:17:44 EDT" name="AfterTest" finished-at="2021-06-04T08:17:44 EDT" duration-ms="574" status="PASS">
+        <test-method is-config="true" signature="AfterTest()[pri:0, instance:com.qa.test.logInTest@3059cbc]" started-at="2021-06-04T16:44:58 EDT" name="AfterTest" finished-at="2021-06-04T16:44:59 EDT" duration-ms="710" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterTest -->
       </class> <!-- com.qa.test.logInTest -->
     </test> <!-- Test -->
-    <test started-at="2021-06-04T08:17:16 EDT" name="Test2" finished-at="2021-06-04T08:17:49 EDT" duration-ms="32324">
-      <class name="com.qa.test.logInTest">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.qa.test.logInTest@611889f4]" started-at="2021-06-04T08:17:16 EDT" name="beforeTest" finished-at="2021-06-04T08:17:33 EDT" duration-ms="16844" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="test()[pri:0, instance:com.qa.test.logInTest@611889f4]" started-at="2021-06-04T08:17:33 EDT" name="test" finished-at="2021-06-04T08:17:48 EDT" duration-ms="14732" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="AfterTest()[pri:0, instance:com.qa.test.logInTest@611889f4]" started-at="2021-06-04T08:17:48 EDT" name="AfterTest" finished-at="2021-06-04T08:17:49 EDT" duration-ms="714" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterTest -->
-      </class> <!-- com.qa.test.logInTest -->
-    </test> <!-- Test2 -->
   </suite> <!-- Suite -->
 </testng-results>
