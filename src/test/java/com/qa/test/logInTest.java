@@ -26,6 +26,8 @@ public class logInTest extends BaseTest {
 		l1.clickLogin();
 		Thread.sleep(3000);
 		
+		
+		System.out.println(DriverManager.getDriver().toString());
 		//DriverManager.getDriver().findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector()."
 				//+"scrollable(true)).scrollIntoView(new UiSelector().text(\"Sauce Labs Fleece Jacket\"))"));
 		
