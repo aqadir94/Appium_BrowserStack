@@ -27,10 +27,15 @@ public class logInTest extends BaseTest {
 		Thread.sleep(3000);
 		
 		
-		System.out.println(DriverManager.getDriver().toString());
-		//DriverManager.getDriver().findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector()."
-				//+"scrollable(true)).scrollIntoView(new UiSelector().text(\"Sauce Labs Fleece Jacket\"))"));
+		String os=DriverManager.getDriver().getCapabilities().getPlatform().toString();
+		System.out.println(os);
 		
+		if(os.contentEquals("ANDROID")) {
+		DriverManager.getDriver().findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector()."
+				+"scrollable(true)).scrollIntoView(new UiSelector().text(\"Sauce Labs Fleece Jacket\"))"));
+		}
+		
+		else if(os.contentEquals("MAC")) {
 		
 		MobileElement element = (MobileElement)DriverManager.getDriver().findElement(By.id("Sauce Labs Fleece Jacket"));
 		
@@ -45,5 +50,5 @@ public class logInTest extends BaseTest {
 
 	}
 	
-	
+	}
 }

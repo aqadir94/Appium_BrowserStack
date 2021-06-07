@@ -75,7 +75,10 @@ public class DriverManager {
       
       // Set your access credentials
       caps.setCapability("browserstack.user", userName);
-      caps.setCapability("browserstack.key", accessKey);
+     caps.setCapability("browserstack.key", accessKey);
+      
+     // caps.setCapability("browserstack.user", "gulamabbas_dnpI5R");
+     // caps.setCapability("browserstack.key", "czW7xTpZ7Pzszqrwg5fw");
       
       // Set URL of the application under test
       
@@ -94,7 +97,7 @@ public class DriverManager {
       // and desired capabilities defined above
        
       if(deviceData.get("os").toString().contains("Android")) {
-    	  caps.setCapability("app", app);
+    	  caps.setCapability("app", "bs://15cccdd13bc8ee391a0890c8d7d549ab05fb1fa3");
 			setDriver( new AndroidDriver(
 			    new URL("http://hub.browserstack.com/wd/hub"), caps));
 		
